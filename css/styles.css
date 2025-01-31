@@ -1,0 +1,50 @@
+/* estilo para el body */
+body{
+    background-color: #292c4b;
+}
+/* estilos para el header */
+header{
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: aquamarine;
+    list-style-position: inside;
+}
+/* estilo para titulos */ 
+h1, h2{
+    color: #eae5f3;
+    text-align: center;
+}
+
+/* estilos de especificidad */
+main ul li{
+    color: pink;
+}
+
+main ol li{
+    color: greenyellow;
+}
+
+/* estilo para main */
+main{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+    list-style-position: inside;
+}
+
+main ul li a{
+    color: #099eae;
+    text-decoration: none;
+}
+/* estilo para el footer */
+footer{
+    text-align: center;
+    color: aliceblue;
+}
