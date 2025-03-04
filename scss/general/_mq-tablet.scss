@@ -1,108 +1,120 @@
 @import "../utilidades/mixin";
 
 @media screen and (min-width: 768px) {
-	.brownie-indice-1 {
-		display: block;
-	}
-	.grid-brownie-indice {
-		display: grid;
-		grid-template-areas: '1 2' '3 4';
-		gap: 10px;
-	}
-	.brownie-responsive-1 {
-		grid-area: 1 3;
-		width: 100%;
-		height: 85%;
-		img {
-			grid-area: 1 3;
-			width: 100%;
-			height: 85%;
-		}
-	}
-	.brownie-responsive-2 {
-		grid-area: 2 4;
-		width: 100%;
-		height: 85%;
-		img {
-			grid-area: 2 4;
-			width: 100%;
-			height: 85%;
-		}
-	}
-	.detalles-preparacion {
-        @include grid(repeat(3, 1fr), repeat(2, fr), "area1 area1 area2" "area1 area1 area3" );
-	}
-	.detalle-img {
-		grid-area: area1;
-	}
-	.detalle-tiempo {
-		grid-area: area2;
-	}
-	.detalle-dificultad {
-		grid-area: area3;
-	}
-	.caja-ingredientes {
-        @include grid(repeat(2, 1fr), repeat(2, 1fr), "area1 area2" "area3 area4");
-		grid-auto-flow: row;
-		overflow:auto
-	}
-	.cajita-1 {
-		grid-area: area1;
-	}
-	.cajita-2 {
-		grid-area: area2;
-	}
-	.img-ingrediente-1 {
-		grid-area: area3;
-	}
-	.img-ingrediente-2 {
-		grid-area: area4;
-	}
-	.receta-relacionada {
-        @include grid(repeat(2, 1fr), repeat(3, 1fr), "area1 area2" "area3 area4" "area5 area6");
-		grid-auto-flow: row;
-	}
-	.recom-responsive-1 {
-		grid-area: area1;
-	}
-	.recom-responsive-2 {
-		grid-area: area2;
-	}
-	.recom-responsive-3 {
-		grid-area: area3;
-	}
-	.recom-responsive-4 {
-		grid-area: area4;
-	}
-	.recom-responsive-5 {
-		grid-area: area5;
-	}
-	.recom-responsive-6 {
-		grid-area: area6;
-	}
-	.redes-flex {
-        @include grid(repeat(2, fr), repeat(3, 1fr), "area1 area2" "area3 area4" "area5 area6");
-		gap: 15px;
-		grid-auto-flow: row;
-		margin: 20px;
-		padding: 20px;
-	}
-	.boton-redes-1 {
-		grid-area: area1;
-	}
-	.boton-redes-2 {
-		grid-area: area2;
-	}
-	.boton-redes-3 {
-		grid-area: area3;
-	}
-	.boton-redes-4 {
-		grid-area: area4;
-	}
-	.boton-redes-5 {
-		grid-area: area5;
-	}
-	.boton-redes-6 {
-		grid-area: area6;
-	}
+  .brownie-indice-1 {
+    display: block;
+  }
+  .grid-brownie-indice {
+    display: grid;
+    grid-template-areas: "1 2" "3 4";
+    gap: 10px;
+  }
+  .brownie-responsive-1 {
+    grid-area: 1 3;
+    width: 100%;
+    height: 85%;
+    img {
+      grid-area: 1 3;
+      width: 100%;
+      height: 85%;
+    }
+  }
+  .brownie-responsive-2 {
+    grid-area: 2 4;
+    width: 100%;
+    height: 85%;
+    img {
+      grid-area: 2 4;
+      width: 100%;
+      height: 85%;
+    }
+  }
+  .detalles-preparacion {
+    @include grid(
+      repeat(3, 1fr),
+      repeat(2, fr),
+      "area1 area1 area2" "area1 area1 area3"
+    );
+  }
+  .detalle-img {
+    grid-area: area1;
+  }
+  .detalle-tiempo {
+    grid-area: area2;
+  }
+  .detalle-dificultad {
+    grid-area: area3;
+  }
+  .caja-ingredientes {
+    @include grid(repeat(2, 1fr), repeat(2, 1fr), "area1 area2" "area3 area4");
+    grid-auto-flow: row;
+    overflow: auto;
+  }
+  .cajita-1 {
+    grid-area: area1;
+  }
+  .cajita-2 {
+    grid-area: area2;
+  }
+  .img-ingrediente-1 {
+    grid-area: area3;
+  }
+  .img-ingrediente-2 {
+    grid-area: area4;
+  }
+  .receta-relacionada {
+    @include grid(
+      repeat(2, 1fr),
+      repeat(3, 1fr),
+      "area1 area2" "area3 area4" "area5 area6"
+    );
+    grid-auto-flow: row;
+  }
+  .recom-responsive-1 {
+    grid-area: area1;
+  }
+  .recom-responsive-2 {
+    grid-area: area2;
+  }
+  .recom-responsive-3 {
+    grid-area: area3;
+  }
+  .recom-responsive-4 {
+    grid-area: area4;
+  }
+  .recom-responsive-5 {
+    grid-area: area5;
+  }
+  .recom-responsive-6 {
+    grid-area: area6;
+  }
+  .redes-flex {
+    @include grid(
+      repeat(2, fr),
+      repeat(3, 1fr),
+      "area1 area2" "area3 area4" "area5 area6"
+    );
+    gap: 15px;
+    grid-auto-flow: row;
+    margin: 20px;
+    padding: 20px;
+  }
+  .boton-redes-1 {
+    grid-area: area1;
+  }
+  .boton-redes-2 {
+    grid-area: area2;
+  }
+  .boton-redes-3 {
+    grid-area: area3;
+  }
+  .boton-redes-4 {
+    grid-area: area4;
+  }
+  .boton-redes-5 {
+    grid-area: area5;
+  }
+  .boton-redes-6 {
+    grid-area: area6;
+  }
 }

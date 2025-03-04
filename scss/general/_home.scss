@@ -2,228 +2,227 @@
 
 @import "../utilidades/mixin";
 
-
 /* estilo para el body */
 body {
-    background-color: $background-color_1;
+  background-color: $background-color_1;
 }
 
 /* estilos para el header */
 header {
-    nav {
-        ul {
-            li {
-                a {
-                    text-decoration: none;
-                    color: $color_1;
-                }
-            }
+  nav {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: $color_1;
         }
+      }
     }
+  }
 }
 
 .nav-link {
-    color: $color_2;
+  color: $color_2;
 }
 
 .navbar-brand {
-    color: $color_2;
+  color: $color_2;
 }
 
 .navbar {
-    background-color: $background-color_2;
+  background-color: $background-color_2;
 }
 
 /* estilo para titulos */
 h1 {
-    color: $color_3;
-    text-align: center;
-    padding: 10px;
+  color: $color_3;
+  text-align: center;
+  padding: 10px;
 }
 
 h2 {
-    color: $color_3;
-    text-align: center;
-    padding: 10px;
+  color: $color_3;
+  text-align: center;
+  padding: 10px;
 }
 
 /* estilo para main */
 main {
-    ul {
-        li {
-            color: $color_4;
-            text-align: left;
+  ul {
+    li {
+      color: $color_4;
+      text-align: left;
 
-            a {
-                color: $color_7;
-                text-decoration: none;
-            }
-        }
+      a {
+        color: $color_7;
+        text-decoration: none;
+      }
     }
+  }
 
-    ol {
-        li {
-            color: $color_5;
-            text-align: left;
-        }
+  ol {
+    li {
+      color: $color_5;
+      text-align: left;
     }
+  }
 
-    text-align: center;
-    color: $color_6;
-    text-decoration: none;
-    list-style-position: inside;
+  text-align: center;
+  color: $color_6;
+  text-decoration: none;
+  list-style-position: inside;
 
+  div {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  section {
     div {
-        img {
-            width: 100%;
-            height: auto;
-        }
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
-
-    section {
-        div {
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
+  }
 }
 
 /* estilo para el footer */
 footer {
-    text-align: center;
-    color: $color_6;
+  text-align: center;
+  color: $color_6;
 }
 
 .cajita-1 {
-    @include flex;
+  @include flex;
 }
 
 .cajita-2 {
-    @include flex;
-    grid-row-start: 2;
-
+  @include flex;
+  grid-row-start: 2;
 }
 
 .redes-flex {
-    @include grid(1fr, repeat(6, 1fr), "area1" "area2" "area3" "area4" "area5" "area6");
-    gap: 10px;
-    grid-auto-flow: row;
-    margin: 20px;
-    padding: 20px;
+  @include grid(
+    1fr,
+    repeat(6, 1fr),
+    "area1" "area2" "area3" "area4" "area5" "area6"
+  );
+  gap: 10px;
+  grid-auto-flow: row;
+  margin: 20px;
+  padding: 20px;
 
-    a {
-        text-decoration: none;
-        color: $color_8;
-    }
+  a {
+    text-decoration: none;
+    color: $color_8;
+  }
 }
 
 .img-ingrediente-3,
 .img-ingrediente-4,
 .brownie-indice-1,
 .brownie-indice-2 {
-    display: none;
+  display: none;
 }
 
 .grid-brownie-indice {
-    display: grid;
-    gap: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 .caja-ingredientes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 8px;
 
-    img {
-        border-radius: 8px;
-    }
-
+  img {
+    border-radius: 8px;
+  }
 }
 
 .img-ingrediente-1 {
-    grid-row-start: 3;
+  grid-row-start: 3;
 }
 
 .img-ingrediente-2 {
-    grid-row-start: 3;
+  grid-row-start: 3;
 }
 
 .imagen-fix {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .receta-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
 
-    img {
-        border-radius: 8px;
-    }
+  img {
+    border-radius: 8px;
+  }
 }
 
 .recom-1 {
-    grid-area: 1 / 1 / 3 / 2;
+  grid-area: 1 / 1 / 3 / 2;
 }
 
 .recom-2 {
-    grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .recom-3 {
-    grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 /* Estilo para Redes */
 
 .boton-redes-1 {
-    grid-area: area1;
+  grid-area: area1;
 }
 
 .boton-redes-2 {
-    grid-area: area2;
+  grid-area: area2;
 }
 
 .boton-redes-3 {
-    grid-area: area3;
+  grid-area: area3;
 }
 
 .boton-redes-4 {
-    grid-area: area4;
+  grid-area: area4;
 }
 
 .boton-redes-5 {
-    grid-area: area5;
+  grid-area: area5;
 }
 
 .boton-redes-6 {
-    grid-area: area6;
+  grid-area: area6;
 }
-
-
 
 /* estilo para preparacion y dificultad */
 
 .detalles-preparacion {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "area1" "area1" "area1" "area1" "area2" "area3";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "area1" "area1" "area1" "area1" "area2" "area3";
 }
 
 .detalle-img {
-    grid-area: area1;
+  grid-area: area1;
 }
 
 .detalle-tiempo {
-    grid-area: area2;
+  grid-area: area2;
 }
 
 .detalle-dificultad {
-    grid-area: area3;
+  grid-area: area3;
 }

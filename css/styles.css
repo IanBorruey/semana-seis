@@ -84,7 +84,7 @@ footer {
   justify-content: flex-start;
   gap: 15px;
   padding: 10px;
-  grid-column: span 2/span 2;
+  grid-column: span 2 / span 2;
 }
 
 .cajita-2 {
@@ -95,7 +95,7 @@ footer {
   justify-content: flex-start;
   gap: 15px;
   padding: 10px;
-  grid-column: span 2/span 2;
+  grid-column: span 2 / span 2;
   grid-row-start: 2;
 }
 
